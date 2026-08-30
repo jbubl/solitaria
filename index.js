@@ -13,8 +13,8 @@ const client = new Client({
     ]
 });
 
-const GUILD_ID = "YOUR_GUILD_ID";
-const CHANNEL_ID = "YOUR_CHANNEL_ID";
+const GUILD_ID = process.env.GUILD_ID;
+const CHANNEL_ID = process.env.CHANNEL_ID;
 
 client.once('ready', async () => {
     try {
