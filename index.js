@@ -26,7 +26,7 @@ client.once('ready', async () => {
             channelId: channel.id,
             guildId: guild.id,
             adapterCreator: guild.voiceAdapterCreator,
-            selfDeaf: false,
+            selfDeaf: true,
             selfMute: true
         });
         console.log(`Successfully connected to voice channel: ${channel.name}`);
